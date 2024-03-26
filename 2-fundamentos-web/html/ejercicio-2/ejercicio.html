@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botón de Navegación</title>
+
+    <style>
+        body{
+         font-family: Arial;
+       }
+     </style>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
         <ul>
             <li>
                 <!-- Completa la navegación -->
-                <a href="#">Acerca de</a>
+                <a href="acerca.html">Acerca de</a>
             </li>
         </ul>
     </nav>
@@ -27,13 +33,31 @@
         <!-- Completa el fomulario -->
         <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" required> <br>
         
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <input type="text" id="apellido" name="apellido" required><br>
 
+            <label for="correo">Correro Electronico:</label>
+            <input type="text" id="correo" name="correo" required><br>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="text" id="contraseña" name="contraseña" required><br>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required><br>
+
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" required><br>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="text" rows="3" cols="50"></textarea>
             <!-- Agrega los inputs faltantes -->
-        </form>
+        </form> 
+
+        <br>
+
+        <button>Registrar</button>
     </main>
 
 </body>

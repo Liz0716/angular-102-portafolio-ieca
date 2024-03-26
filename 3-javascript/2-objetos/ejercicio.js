@@ -10,6 +10,7 @@
 
 /*
     1. Completa la propiedad/función `tirarMoneda` del objeto `juegos`
+
     2. Una vez completo, descomenta la línea `juegos.tirarMoneda()`
 */
 
@@ -21,9 +22,20 @@
 const juegos = {
     aguila: 0,
     sol: 1,
-    tirarMoneda: undefined
+    tirarMoneda:
+    function(){
+        const numero = Math.floor(Math.random() * 2);
+       
+    
+            if (numero === this.aguila) {
+                console.log("Aguila");
+            } else {
+                console.log(this.sol, "sol");
+            }
+            
+    }
 }
 
 for (let tiros = 0; tiros < 10; tiros++) {
-    // juegos.tirarMoneda()
+    juegos.tirarMoneda()
 }

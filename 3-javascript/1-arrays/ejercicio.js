@@ -38,6 +38,16 @@ function vaciarCarritoConTotal() {
     ];
 
     // Completa aquí código de escenario 1
+    const conteo = carrito.length;
+    const articulo = 0;
+    // console.log(conteo);
+
+    for (let index = 0; index < conteo.length; index++) {
+        articulo = carrito.pop();
+        total += articulo.precio;
+    }
+    return [carrito, total];
+    
 }
 
 /*
@@ -56,6 +66,8 @@ function cuentaDeAlumnos() {
     const grupoB = ["Alejandro Ruiz","Carmen Ortega","Roberto Mendoza","Patricia Vargas","Eduardo Morales","Olga Reyes","Gustavo Paredes","Natalia Soto","Hector Delgado","Monica Castillo","Raul Rios","Raquel Valdez","Fernando Acosta","Silvia Castro","Manuel Vega","Lourdes Guzman","Jorge Navarro"]
 
     // Completa aquí código de Escenario 2
+  const grupoAB = grupoA.concat(grupoB);
+  console.log(grupoAB.length);
 }
 
 /*
@@ -81,6 +93,21 @@ function transmitiendoBatch() {
     "DDDDDDDDDDDD","11010100101","01010101010","11110000000","00001111000","10101010101","11001100110","00110011001","11111111111","00000000000","10000000000","01000000000","11000000000","00100000000","10100000000","01100000000","11100000000","00010000000","10010000000","01010000000","11010000000","00110000000","10110000000","01110000000","11110000000","00001000000","10001000000","01001000000","11001000000","00101000000","10101000000","01101000000","11101000000","00011000000","10011000000","01011000000","11011000000","00111000000","10111000000","01111000000","11111000000","00000100000","10000100000","01000100000","11000100000","00100100000","10100100000","01100100000","11100100000","00010100000"];
 
     // Completa aquí código de Escenario 3
+
+    const cuatro = Math.ceil(alumnos.length / 4);
+    
+    const primera = alumnos.slice(0, cuatro);
+    const segunda= alumnos.slice(cuatro, cuatro * 2);
+    const tercera = alumnos.slice(cuatro * 2, cuatro * 3);
+    const cuartaParte = alumnos.slice(cuatro * 3);
+    
+    console.log('Primera parte:', primera.toString());
+    console.log('Segunda parte:', segunda.toString());
+    console.log('Tercera parte:', tercera.toString());
+    console.log('Cuarta parte:', cuatro.toString());
+    console.log('Array original:', alumnos.toString());
+    
+
 }
 
 //vaciarCarritoConTotal()
